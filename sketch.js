@@ -1,5 +1,14 @@
+let saveButton;
+
 function setup() {
     createCanvas(800, 600);
+    saveButton = createButton("save to JSON");
+    saveButton.position(300,300);
+    saveButton.mousePressed(startSaving());
+}
+
+function startSaving() {
+console.log("JSON saved");
 }
 
 function draw() {
